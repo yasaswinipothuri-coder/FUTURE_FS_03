@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bliss Café - Premium Coffee & Pastries</title>
+    <meta name="description" content="Brew & Bliss Café - Your neighborhood coffee shop serving premium coffee, fresh pastries, and a cozy atmosphere.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-coffee"></i>
+                    <span>Brew & Bliss Café</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Brew & Bliss Café</h1>
+                <p>Where every cup tells a story and every moment is cherished</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Visit Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Café</h2>
+                <p>Crafting exceptional coffee experiences since 2020</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>More Than Just Coffee</h3>
+                    <p>At Brew & Bliss Café, we believe that great coffee is more than just a beverage—it's an experience. Founded in 2020, we've been serving our community with carefully sourced beans, expertly brewed coffee, and freshly baked pastries.</p>
+                    <p>Our passion for quality extends from the beans we select to the warm atmosphere we create. Whether you're starting your day, taking a break, or meeting friends, we're here to make your moments special.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Organic Beans</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Freshly Brewed Daily</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Shop Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully crafted selection</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="sandwiches">Sandwiches</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-category active" id="coffee">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Espresso</h4>
+                            <p>Rich, bold shot of pure coffee essence</p>
+                        </div>
+                        <div class="item-price">₹299</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Espresso with steamed milk and foam</p>
+                        </div>
+                        <div class="item-price">₹374</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Latte</h4>
+                            <p>Smooth espresso with steamed milk</p>
+                        </div>
+                        <div class="item-price">₹415</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cold Brew</h4>
+                            <p>24-hour steeped, smooth and refreshing</p>
+                        </div>
+                        <div class="item-price">₹332</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="pastries">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Croissant</h4>
+                            <p>Buttery, flaky French pastry</p>
+                        </div>
+                        <div class="item-price">₹299</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Muffin</h4>
+                            <p>Fresh baked daily, various flavors</p>
+                        </div>
+                        <div class="item-price">₹249</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Cinnamon Roll</h4>
+                            <p>Sweet, sticky, and delicious</p>
+                        </div>
+                        <div class="item-price">₹374</div>
+                    </div>
+                </div>
+                <div class="menu-category" id="sandwiches">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Club Sandwich</h4>
+                            <p>Turkey, bacon, lettuce, tomato</p>
+                        </div>
+                        <div class="item-price">₹706</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Grilled Cheese</h4>
+                            <p>Three cheese blend on sourdough</p>
+                        </div>
+                        <div class="item-price">₹540</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Veggie Wrap</h4>
+                            <p>Fresh vegetables with hummus</p>
+                        </div>
+                        <div class="item-price">₹581</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>A glimpse into our café life</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Art">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521017432511-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Shop">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0e8b79c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pastries">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Beans">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Café Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Cup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <p>We'd love to see you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Main Street<br>Downtown, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 7:00 AM - 8:00 PM<br>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@brewandblisscafe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brew & Bliss Café</h3>
+                    <p>Your neighborhood coffee shop serving premium coffee and fresh pastries.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Bliss Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
